@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
-}
+/* Main Styles */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-container{
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tabs-class{
+  margin-top: 20px;
+}
+/* Header Styles */
+
+.header{
+  margin-left: 10px;
+}
+.amount-wrapper{
+  display: flex;
+}
+.amount{
+  font-size: 70px;
+  color: var(--text-color-dark);
+}
+.currency{
+  font-size: 24px;
+  color: var(--hint-color);
+  position: relative;
+  top: 17px;
+  margin-left: 10px;
+}
+
+.pl-container{
+  display: flex;
+  color: var(--secondary-color);
+}
+
+/* Button Styles */
+
+button{
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.icon-button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-button span{
+  margin-left: 5px;
+}
+
+/* Tab Styles */
+
+.hr{
+  border-bottom: 1px solid var(--border-color);
+  width: 100%;
+}
+.tab-header-container{
+  display: flex;
+  gap: 10px;
+}
+.tab-header{
+  padding: 5px 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.tab-header-active{
+  color: var(--text-color-dark);
+}
+.tab-active{
+  margin-top: 10px;
+  border-bottom: 2px solid var(--primary-color);
+}
+.tab-content{
+  padding: 20px;
+}
+.tab-hidden{
+  display: none;
+}
+
+/* Chart Styles */
+
+.button-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.range-btn{
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.range-btn-active{
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+.chart-wrapper{
+  margin-top: 30px;
+}
+.tooltip{
+  background-color: var(--primary-color);
+  color: var(--bg-color);
 }
